@@ -1,20 +1,74 @@
 .container {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-areas:
+    '. wkey . ekey . . tkey . ykey . ukey . . okey . pkey .'
+    'akey . skey . dkey fkey . gkey . hkey . jkey kkey . lkey . semikey';
 }
 
-.white-key {
-  width: 100px;
-  height: 100px;
+#akey {
+  grid-area: akey;
+}
+#skey {
+  grid-area: skey;
+}
+#dkey {
+  grid-area: dkey;
+}
+#wkey {
+  grid-area: wkey;
+}
+#ekey {
+  grid-area: ekey;
+}
+#fkey {
+  grid-area: fkey;
+}
+#tkey {
+  grid-area: tkey;
+}
+#gkey {
+  grid-area: gkey;
+}
+#ykey {
+  grid-area: ykey;
+}
+#hkey {
+  grid-area: hkey;
+}
+#ukey {
+  grid-area: ukey;
+}
+#jkey {
+  grid-area: jkey;
+}
+#kkey {
+  grid-area: kkey;
+}
+#okey {
+  grid-area: okey;
+}
+#lkey {
+  grid-area: lkey;
+}
+#pkey {
+  grid-area: pkey;
+}
+#semikey {
+  grid-area: semikey;
+}
+
+.key {
+  height: 50px;
   color: #222222;
   background-color: #ffffff;
   border: 1px solid #222222;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+.adjusted-keys {
+  background-color: #222222;
+  color: #ffffff;
 }
